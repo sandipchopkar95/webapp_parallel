@@ -60,7 +60,7 @@ public class BaseTest {
     public void tearDown() {
         try {
             if (PlaywrightFactory.getPage() != null) {
-                getPage().waitForTimeout(4000);
+                getPage().waitForTimeout(5000);
                 try {
                     PlaywrightFactory.getPage().close();
                 } catch (Exception e) {

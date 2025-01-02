@@ -7,3 +7,4 @@ Reports/
 .settings
 .idea
 /logs/
+UserSession/**

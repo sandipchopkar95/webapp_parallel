@@ -75,7 +75,6 @@ public class PlaywrightFactory {
         }
         tlBrowserContext.set(getBrowser().newContext());
         tlPage.set(getBrowserContext().newPage());
-        //return getPage();
     }
 
     public Properties init_prop() {

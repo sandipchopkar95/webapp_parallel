@@ -25,7 +25,6 @@ public class LoginPageTest extends BaseTest {
 		loginpage = new LoginPage(getPage());
 	}
 
-
 	@Test(priority = 1)
 	@AdditionalDescriptions({"WA-5572, WA-5555"})
 	public void verifyAllElementsOfLoginPage() {
