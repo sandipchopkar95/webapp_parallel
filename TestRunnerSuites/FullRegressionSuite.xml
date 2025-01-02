@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="Regression Suite"  preserve-order="true">
+    <listeners>
+        <listener class-name="com.truvideo.testutils.Listeners"></listener>
+    </listeners>
+    <parameter name="browser" value="chrome"/>
+    <parameter name="headless" value="false"/>
+    <test name="Login Scenarios" parallel="methods" thread-count="3" verbose="5">
+        <classes>
+            <class name="com.truvideo.tests.LoginPageTest"></class>
+            <class name="com.truvideo.tests.ForgotPasswordPageTest"></class>
+            <class name="com.truvideo.tests.SignUpPageTest"></class>
+        </classes>
+    </test>
+    <test name="Regression Scenarios" parallel="methods" thread-count="3" verbose="5">
+        <classes>
+            <class name="com.truvideo.tests.HomePageTest"></class>
+            <class name="com.truvideo.tests.OrderListPageTest"></class>
+        </classes>
+    </test>
+</suite>
